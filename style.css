@@ -11,9 +11,9 @@
 }
 
 :root {
-    --big-size: 5em;
-    --medium-size: 2.5em;
-    --small-size: 1.5em;
+    --big-size: 8vw;
+    --medium-size: 3vw;
+    --small-size: 2vw;
 }
 
 * {
@@ -23,6 +23,7 @@
 
 body {
     min-height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 header {
@@ -41,7 +42,6 @@ header > p {
     padding: 0px 20px 50px 20px;
     text-align: center;
     font-size: var(--small-size);
-    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -54,6 +54,10 @@ body a {
 body a:hover {
     text-decoration: underline;
 }
+
+body a:hover::after {
+    content: '\1F517';
+} 
 
 main > section#secao1 {
     background-color: white;
@@ -69,11 +73,13 @@ main > section > article#artigo1 {
 }
 
 main > section#secao2 {
+    background-color: beige;
     background-image: url('./midia/background-1.jpg');
     background-size: cover;
+    background-attachment: fixed;
     height: auto;
     padding: 60px;
-    box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.400);
+    box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.600);
 }
 
 main > section > article#artigo2 {
@@ -84,8 +90,8 @@ main > section > article#artigo2 {
     background-color: rgba(0, 0, 0, 0.400);
     padding: 50px;
     height: auto;
-    max-width: 500px;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.400);
+    display: inline-block;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.400);
 }
 
 main > section#secao3 {
@@ -101,12 +107,14 @@ main > section > article#artigo3 > p {
 }
 
 main > section#secao4 {
+    background-color: beige;
     background-image: url('./midia/background-2.jpg');
     background-size: cover;
+    background-attachment: fixed;
     height: auto;
     margin-top: 80px;
     padding: 60px;
-    box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.400);
+    box-shadow: 0px -3px 3px rgba(0, 0, 0, 0.600);
 }
 
 main > section > article#artigo4 {
@@ -117,7 +125,7 @@ main > section > article#artigo4 {
     color: white;
     padding: 50px;
     height: auto;
-    max-width: 500px;
+    display: inline-block;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.600);
 }
 
@@ -140,5 +148,4 @@ footer {
     color: white;
     text-align: center;
     font-size: var(--small-size);
-    font-family: Arial, Helvetica, sans-serif;
 }
