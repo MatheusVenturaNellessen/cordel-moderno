@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'cordel';
+    src: url('./midia/EldesCordel-Demo.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'poesia';
+    src: url('./midia/ComicSansMS3.ttf') format('truetype');
+}
+
+:root {
+    --big-size: 5em;
+    --medium-size: 2.5em;
+    --small-size: 1.5em;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: black;
+    color: white;
+}
+
+header > h1 {
+    padding: 50px 20px 0px 20px;
+    text-align: center;
+    font-size: var(--big-size);
+    font-family: 'cordel';
+}
+
+header > p {
+    padding: 20px 20px 50px 20px;
+    text-align: center;
+    font-size: var(--small-size);
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body a {
+    text-decoration: none;
+    color: white;
+}
+
+body a:hover {
+    text-decoration: underline;
+}
+
+main > section#secao1 {
+    background-color: white;
+    height: auto;
+
+}
+
+main > section > article#artigo1 {
+    font-family: 'poesia';
+    font-size: var(--medium-size);
+    line-height: 2em;
+    padding: 80px 40px;
+}
+
+main > section#secao2 {
+    background-image: url('./midia/girassol.jpg');
+    background-size: cover;
+    height: auto;
+    padding: 60px;
+    box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.600);
+}
+
+main > section > article#artigo2 {
+    font-family: 'poesia';
+    font-size: var(--medium-size);
+    line-height: 2em;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.400);
+    padding: 50px;
+    height: auto;
+    max-width: 500px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.600);
+}
+
+main > section#secao3 {
+    background-color: white;
+    height: auto;
+}
+
+main > section > article#artigo3 > p {
+    font-family: 'poesia';
+    font-size: var(--medium-size);
+    line-height: 2em;
+    padding: 80px 50px 0px 50px;
+}
+
+main > section#secao4 {
+    background-image: url('./midia/cartas.jpg');
+    background-size: cover;
+    height: auto;
+    margin-top: 80px;
+    padding: 60px;
+    box-shadow: 0px -2px 2px rgba(0, 0, 0, 0.600);
+}
+
+main > section > article#artigo4 {
+    background-color: rgba(0, 0, 0, 0.400);
+    font-family: 'poesia';
+    font-size: var(--medium-size);
+    line-height: 2em;
+    color: white;
+    padding: 50px;
+    height: auto;
+    max-width: 500px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.600);
+}
+
+main > section#secao5 {
+    background-color: white;
+    height: auto;
+}
+
+main > section > article#artigo5 > p {
+    font-family: 'poesia';
+    font-size: var(--medium-size);
+    line-height: 2em;
+    padding: 80px 50px 0px 50px;
+}
+
+footer {
+    background-color: black;
+    margin-top: 80px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    font-size: var(--small-size);
+    font-family: Arial, Helvetica, sans-serif;
+}
